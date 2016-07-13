@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">paulcouaillier - ShiFuMi</string>
+    <string name="login_button">login</string>
+    <string name="login_error_message">bad login</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string-array name="nav_drawer_items">
+        <item>Choose car</item>
+        <item>History</item>
+        <item>Parameter</item>
+    </string-array>
+</resources>

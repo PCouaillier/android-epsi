@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/car_red"
+            android:id="@+id/choice_red"
+            android:layout_column="2" />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/car_blue"
+            android:id="@+id/choice_blue"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_column="6" />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/car_green"
+            android:id="@+id/choice_green"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_column="7" />
+
+        <ImageView
+            android:background="@drawable/car_unknown"
+            android:id="@+id/choice_machine"
+            android:layout_gravity="right|top"
+            android:layout_column="18"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:name="fr.paulcouaillier.shifumi.fragment.HistoryFragment"
+            android:id="@+id/fragment"
+            android:layout_span="18"
+            android:layout_column="1"
+            tools:layout="@layout/fragment_history" />
+    </TableRow>
+
+</TableLayout>
